@@ -55,6 +55,22 @@
 .pub-collapsible.expanded {
   max-height: 3000px;
 }
+.pub-note {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.pub-filter-button {
+  border: none;
+  background: none;
+  color: #224b8d;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  padding: 0;
+}
+.pub-filter-button:hover {
+  border-bottom: 1px gray dotted;
+}
 </style>
 </head>
 <body>
@@ -87,17 +103,17 @@ I was a research intern supervised by <a href="http://jiemingzhu.github.io/">Jie
 </p> 
 
 
-<p> My research directions are Data Mining and Deep Research Agent. </p>
+<p> My research directions are Agentic Foundation Models and Deep Research Agents. </p>
 
 <h2>News</h2>
 <ul class="news-list">
-  <!-- <li><span class="news-date">Mar. 2026</span> We open-source <strong>MiroThinker-1.7</strong> and <strong>MiroThinker-1.7-mini</strong>, and release the technical report! Check out our <a href="https://dr.miromind.ai">online service</a>, <a href="https://github.com/MiroMindAI/MiroThinker">GitHub</a>, and model weights (<a href="https://huggingface.co/miromind-ai/MiroThinker-1.7">1.7</a>, <a href="https://huggingface.co/miromind-ai/MiroThinker-1.7-mini">1.7-mini</a>). 🎉</li> -->
+  <li><span class="news-date">Jul. 2026</span> Our work <em>LiteScope</em> was accepted by ASE 2026. Congrats to Yuanxiang! 🎉</li>
   <li><span class="news-date">Mar. 2026</span> Our work <em>R1-Fuzz</em> was accepted by IEEE S&P 2026. 🎉</li>
   <li><span class="news-date">Jan. 2026</span> Three papers were accepted by ICLR 2026. Congrats to all co-authors! 🎉 See you in Brazil!</li>
   <li><span class="news-date">Sep. 2025</span> We release our open-source and powerful deep research agent <strong>Tongyi DeepResearch</strong>! Please see <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">the tech blog</a> for details. Our model is available at <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">huggingface</a> and
   <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B">modelscope</a>.</li>
   <li><span class="news-date">Aug. 2025</span> Our work <em>ImportSnare</em> was accepted by ACM CCS 2025. 🎉</li>
-  <li><span class="news-date">Jan. 2025</span> One paper about unlearnable data was accepted by ICLR 2025. 🤩 See you in Singapore!</li>
+  <!-- <li><span class="news-date">Jan. 2025</span> One paper about unlearnable data was accepted by ICLR 2025. 🤩 See you in Singapore!</li> -->
   <!-- <li><strong>[July. 2024]</strong> Our paper ERASE was accepted by CIKM 2024. Congrats to Ling-Hao Chen! </li> -->
   <!-- <li><strong>[June. 2024]</strong> Our paper (Invisibility Cloak) was accepted by USENIX Security 2024. </li> -->
   <!-- <li><strong>[May. 2024]</strong> Our latest <a href="https://arxiv.org/abs/2405.09592">survey paper</a> on generative techniques for spatial-temporal data mining is now available. </li> -->
@@ -114,7 +130,7 @@ I was a research intern supervised by <a href="http://jiemingzhu.github.io/">Jie
 
 <h2>Research Experiences</h2>
 <ul>
-  <li><strong>MiroMind</strong>, Research Intern. Dec. 2025 - Present </li>
+  <li><strong>Apodex</strong>, Research Intern. Dec. 2025 - Present </li>
   <li><strong>Tongyi Lab (Deep Research Team)</strong>, Research Intern (Founder Member). May 2025 - Dec. 2025 </li>
   <li><strong>The University of Hong Kong</strong>, Research Assistant. Nov. 2023 - Aug. 2024</li>
   <li><strong>Tencent</strong>, Research Intern. Jun. 2022 - Nov. 2023</li>
@@ -125,14 +141,12 @@ I was a research intern supervised by <a href="http://jiemingzhu.github.io/">Jie
 <h2>Technical Report</h2>
 
 <ul>
-  <!-- <li><p><strong>MiroThinker-1.7 & H1: Towards Heavy-Duty Research Agents via Verification</strong><br />
-    Core Contributor, MiroMind<br />
-    <a href="https://arxiv.org/abs/2603.15726">[📄 Paper]</a>
-    <a href="https://dr.miromind.ai">[🌐 Online Service]</a>
-    <a href="https://github.com/MiroMindAI/MiroThinker">[<svg style="height: 1em; vertical-align: middle; display: inline;" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub]</a>
-    <a href="https://huggingface.co/miromind-ai/MiroThinker-1.7">[🤗 MiroThinker-1.7]</a>
-    <a href="https://huggingface.co/miromind-ai/MiroThinker-1.7-mini">[🤗 MiroThinker-1.7-mini]</a></p>
-  </li> -->
+  <li><p><strong>Apodex 1.0: Self-Evolving Heavy-Duty Solver</strong><br />
+    Core Contributor, Apodex<br />
+    <a href="https://www.apodex.com/pdf/20260608">[📄 Paper]</a>
+    <a href="https://www.apodex.com/blog/apodex-1.0">[📰 Blog]</a>
+    <a href="https://huggingface.co/apodex/Apodex-1.0-mini">[🤗 HuggingFace]</a></p>
+  </li>
 
   <li><p><strong>Tongyi-DeepResearch</strong><br />
     Core Contributor, DeepResearch Team, Tongyi Lab<br />
@@ -145,13 +159,23 @@ I was a research intern supervised by <a href="http://jiemingzhu.github.io/">Jie
 </ul>
 
 <h2>Publications</h2>
-(* denotes equal contributions)
+<p class="pub-note">(* denotes equal contributions; <button type="button" class="pub-filter-button" id="first-author-filter-button" onclick="toggleFirstAuthorPublications()">Show First/Co-First Only</button>)</p>
 
 <ul>
   <li><p><strong>Scaling Agents via Continual Pre-training</strong><br />
     <span class="author-highlight"><strong>Liangcai Su*</strong></span>, Zhen Zhang*, Guangyu Li*, Zhuo Chen*, Chenxi Wang*, Maojia Song, Xinyu Wang, et al.<br />
     ICLR 2026. <a href="https://arxiv.org/abs/2509.13310">[📄 Paper]</a>
     <a href="https://venturebeat.com/ai/build-research-agents-without-api-costs-alibabas-offline-data-synthesis">[📰 VentureBeat]</a></p>
+  </li>
+
+  <li><p><strong>Argus: Evidence Assembly for Scalable Deep Research Agents</strong><br />
+    Zhen Zhang*, <span class="author-highlight"><strong>Liangcai Su*</strong></span>, Zhuo Chen*, Xiang Lin, Haotian Xu, Kaiyu Yang, Bo An, Simon Shaolei Du, Lidong Bing, Xinyu Wang.<br />
+    Arxiv 2026. <a href="https://arxiv.org/pdf/2605.16217v3">[📄 Paper]</a></p>
+  </li>
+
+  <li><p><strong>LiteScope: Revealing the Security Paradox of Android Lite Apps in Resource-Constrained Ecosystems</strong><br />
+    Yuanxiang Shi*, <span class="author-highlight"><strong>Liangcai Su*</strong></span>, Kai Ye, Xi Xiao, Chenxiong Qian.<br />
+    ASE 2026. [To be appear]</p>
   </li>
 
   <li><p><strong>Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis</strong><br />
@@ -236,6 +260,9 @@ I was a research intern supervised by <a href="http://jiemingzhu.github.io/">Jie
 <p><a href="javascript:void(0);" onclick="togglePublications()" id="toggle-link">[Show all publications]</a></p>
 
 <script>
+var firstAuthorFilterActive = false;
+var previousMorePublicationsExpanded = false;
+
 function togglePublications() {
   var morePublications = document.getElementById("more-publications");
   var toggleLink = document.getElementById("toggle-link");
@@ -246,6 +273,136 @@ function togglePublications() {
   } else {
     morePublications.classList.remove("expanded");
     toggleLink.textContent = "[Show all publications]";
+  }
+}
+
+function getPublicationItems() {
+  var headings = document.getElementsByTagName("h2");
+  var publicationsHeading = null;
+
+  for (var i = 0; i < headings.length; i++) {
+    if (headings[i].textContent === "Publications") {
+      publicationsHeading = headings[i];
+      break;
+    }
+  }
+
+  if (!publicationsHeading) {
+    return [];
+  }
+
+  var items = [];
+  var mainList = publicationsHeading.nextElementSibling;
+  var morePublications = document.getElementById("more-publications");
+
+  while (mainList && mainList.tagName.toLowerCase() !== "ul") {
+    mainList = mainList.nextElementSibling;
+  }
+
+  if (mainList && mainList.tagName.toLowerCase() === "ul") {
+    items = items.concat(Array.prototype.slice.call(mainList.getElementsByTagName("li")));
+  }
+
+  if (morePublications) {
+    items = items.concat(Array.prototype.slice.call(morePublications.getElementsByTagName("li")));
+  }
+
+  return items;
+}
+
+function getPublicationLists() {
+  var headings = document.getElementsByTagName("h2");
+  var publicationsHeading = null;
+
+  for (var i = 0; i < headings.length; i++) {
+    if (headings[i].textContent === "Publications") {
+      publicationsHeading = headings[i];
+      break;
+    }
+  }
+
+  if (!publicationsHeading) {
+    return [];
+  }
+
+  var lists = [];
+  var mainList = publicationsHeading.nextElementSibling;
+  var morePublications = document.getElementById("more-publications");
+
+  while (mainList && mainList.tagName.toLowerCase() !== "ul") {
+    mainList = mainList.nextElementSibling;
+  }
+
+  if (mainList && mainList.tagName.toLowerCase() === "ul") {
+    lists.push(mainList);
+  }
+
+  if (morePublications) {
+    lists = lists.concat(Array.prototype.slice.call(morePublications.getElementsByTagName("ul")));
+  }
+
+  return lists;
+}
+
+function isFirstOrCoFirstPublication(item) {
+  var text = item.innerText || item.textContent || "";
+  var lines = text.split(/\n/);
+  var authorLine = lines.length > 1 ? lines[1].replace(/^\s+|\s+$/g, "") : "";
+
+  return authorLine.indexOf("Liangcai Su*") !== -1 || authorLine.indexOf("Liangcai Su,") === 0 || authorLine.indexOf("Liangcai Su.") === 0;
+}
+
+function updatePublicationListVisibility(filterActive) {
+  var lists = getPublicationLists();
+
+  for (var i = 0; i < lists.length; i++) {
+    if (!filterActive) {
+      lists[i].style.display = "";
+      continue;
+    }
+
+    var visibleItems = Array.prototype.slice.call(lists[i].getElementsByTagName("li")).filter(function(item) {
+      return item.style.display !== "none";
+    });
+
+    lists[i].style.display = visibleItems.length > 0 ? "" : "none";
+  }
+}
+
+function toggleFirstAuthorPublications() {
+  var morePublications = document.getElementById("more-publications");
+  var toggleLink = document.getElementById("toggle-link");
+  var filterButton = document.getElementById("first-author-filter-button");
+  var items = getPublicationItems();
+
+  firstAuthorFilterActive = !firstAuthorFilterActive;
+
+  if (firstAuthorFilterActive) {
+    previousMorePublicationsExpanded = morePublications.classList.contains("expanded");
+    morePublications.classList.add("expanded");
+    toggleLink.style.display = "none";
+    filterButton.textContent = "Show All Publications";
+
+    for (var i = 0; i < items.length; i++) {
+      items[i].style.display = isFirstOrCoFirstPublication(items[i]) ? "" : "none";
+    }
+    updatePublicationListVisibility(true);
+  } else {
+    if (previousMorePublicationsExpanded) {
+      morePublications.classList.add("expanded");
+      toggleLink.textContent = "[Show less]";
+    } else {
+      morePublications.classList.remove("expanded");
+      toggleLink.textContent = "[Show all publications]";
+    }
+
+    toggleLink.style.display = "";
+    filterButton.textContent = "Show First/Co-First Only";
+
+    for (var j = 0; j < items.length; j++) {
+      items[j].style.display = "";
+    }
+    updatePublicationListVisibility(false);
   }
 }
 </script>
@@ -265,7 +422,7 @@ function togglePublications() {
 
 
 <div id="footer">
-<p style="color: #888; font-size: small; text-align: center;">Last Updated: March 19, 2026.</p>
+<p style="color: #888; font-size: small; text-align: center;">Last Updated: July 6, 2026.</p>
 <div id="footer-text">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGMZSKJ2WQ"></script>
